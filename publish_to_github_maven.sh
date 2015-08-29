@@ -36,7 +36,7 @@ fi
 echo "publishing artifacts to publishing destination."
 pushd .
 cd $GRADLE_ROOT_PATH
-./gradlew uploadArchives
+./gradlew clean uploadArchives
 popd
 
 # commit and push the updated publishing destination repo
